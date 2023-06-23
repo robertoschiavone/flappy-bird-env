@@ -9,10 +9,10 @@ from typing import Any, Dict, List, SupportsFloat, Tuple
 from gymnasium.core import ActType, ObsType, RenderFrame
 from gymnasium.spaces import Box, Discrete
 
-from background import Background
-from base import Base
-from bird import Bird
-from pipe import Pipe
+from .background import Background
+from .base import Base
+from .bird import Bird
+from .pipe import Pipe
 
 
 class FlappyBirdEnv(gym.Env):

@@ -2,8 +2,8 @@ import os
 
 import pygame
 
-from drawable import Drawable
-from movable import Movable
+from .drawable import Drawable
+from .movable import Movable
 
 
 class Base(Drawable, Movable):

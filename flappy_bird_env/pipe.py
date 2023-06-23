@@ -3,9 +3,9 @@ import os
 import numpy as np
 import pygame
 
-from bird import Bird
-from drawable import Drawable
-from movable import Movable
+from .bird import Bird
+from .drawable import Drawable
+from .movable import Movable
 
 
 class Pipe(Drawable, Movable):

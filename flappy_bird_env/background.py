@@ -2,7 +2,7 @@ import os
 
 import pygame
 
-from drawable import Drawable
+from .drawable import Drawable
 
 
 class Background(Drawable):
