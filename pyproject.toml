@@ -1,0 +1,25 @@
+[project]
+name = "flappy-bird-env"
+version = "0.1.0"
+description = """Flappy Bird as a Farama Gymnasium environment."""
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Roberto Schiavone", email = "hello@robertoschiavone.io" },
+]
+maintainers = [
+    { name = "Roberto Schiavone", email = "hello@robertoschiavone.io" },
+]
+keywords = ["flappy-bird", "gymnasium", "reinforcement-learning"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries"
+]
+
+[project.urls]
+homepage = "https://github.com/robertoschiavone/flappy-bird-env"
+documentation = "https://github.com/robertoschiavone/flappy-bird-env"
+repository = "https://github.com/robertoschiavone/flappy-bird-env.git"
+changelog = "https://github.com/robertoschiavone/flappy-bird-env/releases"

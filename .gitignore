@@ -1,8 +1,21 @@
-# Created by https://www.toptal.com/developers/gitignore/api/python,virtualenv,jetbrains+all
-# Edit at https://www.toptal.com/developers/gitignore?templates=python,virtualenv,jetbrains+all
+### Git ###
+# Created by git for backups. To disable backups in Git:
+# $ git config --global mergetool.keepBackup false
+*.orig
+
+# Created by git when using merge tools for conflicts
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*_BACKUP_*.txt
+*_BASE_*.txt
+*_LOCAL_*.txt
+*_REMOTE_*.txt
 
 ### JetBrains+all ###
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion,
+# Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff
@@ -35,14 +48,14 @@
 # When using Gradle or Maven with auto-import, you should exclude module files,
 # since they will be recreated, and may cause churn.  Uncomment if using
 # auto-import.
-# .idea/artifacts
-# .idea/compiler.xml
-# .idea/jarRepositories.xml
-# .idea/modules.xml
-# .idea/*.iml
-# .idea/modules
-# *.iml
-# *.ipr
+.idea/artifacts
+.idea/compiler.xml
+.idea/jarRepositories.xml
+.idea/modules.xml
+.idea/*.iml
+.idea/modules
+*.iml
+*.ipr
 
 # CMake
 cmake-build-*/
@@ -180,24 +193,28 @@ ipython_config.py
 .python-version
 
 # pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version
+#   control.
+#   However, in case of collaboration, if having platform-specific dependencies or
+#   dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work,
+#   or not install all needed dependencies.
 Pipfile.lock
 
 # poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
+#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in
+#   version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is
+#   more commonly ignored for libraries.
 #   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
 poetry.lock
 
 # pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#pdm.lock
-#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
-#   in version control.
+#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version
+#   control.
+pdm.lock
+#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not
+#   include it in version control.
 #   https://pdm.fming.dev/#use-with-ide
 .pdm.toml
 
@@ -247,20 +264,26 @@ cython_debug/
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
+#  and can be added to the global gitignore or merged into this file.  For a more
+#  nuclear option (not recommended) you can uncomment the following to ignore the entire
+#  idea folder.
 .idea/
 
 ### Python Patch ###
-# Poetry local configuration file - https://python-poetry.org/docs/configuration/#local-configuration
+# Poetry local configuration file
+# https://python-poetry.org/docs/configuration/#local-configuration
 poetry.toml
 
 # ruff
 .ruff_cache/
 
-### VirtualEnv ###
+# LSP config files
+pyrightconfig.json
+
+### venv ###
 # Virtualenv
 # http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
+.Python
 [Bb]in
 [Ii]nclude
 [Ll]ib
@@ -268,6 +291,5 @@ poetry.toml
 [Ll]ocal
 [Ss]cripts
 pyvenv.cfg
+.venv
 pip-selfcheck.json
-
-# End of https://www.toptal.com/developers/gitignore/api/python,virtualenv,jetbrains+all
