@@ -1,7 +1,8 @@
 # Flappy Bird Env
 
 <p align="center">
-    <img src="flappy-bird.gif" alt="flappy bird"/>
+    <img src="https://raw.githubusercontent.com/robertoschiavone/flappy-bird-env/main/flappy-bird.gif"
+        alt="flappy bird"/>
 </p>
 
 <table>
