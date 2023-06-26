@@ -13,7 +13,9 @@ class Pipe(Drawable, Movable):
         self.x = x
         self.rng = rng
 
-        raw_image = pygame.image.load(os.path.join("images", "pipe.png"))
+        path = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                            "images", "pipe.png")
+        raw_image = pygame.image.load(path)
         self.pipe_image = pygame.transform.scale2x(raw_image)
         self.gap = 200
         self.velocity = 5

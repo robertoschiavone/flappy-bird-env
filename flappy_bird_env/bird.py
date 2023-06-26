@@ -11,11 +11,19 @@ class Bird(Drawable, Movable):
         self.x = x
         self.y = y
 
-        raw_images = [
-            pygame.image.load(os.path.join("images", "upflap.png")),
-            pygame.image.load(os.path.join("images", "midflap.png")),
-            pygame.image.load(os.path.join("images", "downflap.png"))
-        ]
+        upflap_path = os.path.join(
+            os.path.dirname(os.path.realpath(__file__)),
+            "images", "upflap.png")
+        midflap_path = os.path.join(
+            os.path.dirname(os.path.realpath(__file__)),
+            "images", "midflap.png")
+        downflap_path = os.path.join(
+            os.path.dirname(os.path.realpath(__file__)),
+            "images", "downflap.png")
+
+        sprites = [upflap_path, midflap_path, downflap_path]
+
+        raw_images = [pygame.image.load(sprite) for sprite in sprites]
         self.bird_images = [pygame.transform.scale2x(image)
                             for image in raw_images]
 
@@ -65,7 +73,7 @@ class Bird(Drawable, Movable):
     def move(self) -> None:
         self.tick_count += 1
         displacement = self.velocity * self.tick_count + 1.5 * \
-            self.tick_count ** 2
+                       self.tick_count ** 2
 
         if displacement > 16:
             displacement = (displacement / abs(displacement)) * 16

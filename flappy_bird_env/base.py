@@ -10,7 +10,9 @@ class Base(Drawable, Movable):
     def __init__(self, y: int):
         self.y = y
 
-        raw_image = pygame.image.load(os.path.join("images", "base.png"))
+        path = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                            "images", "base.png")
+        raw_image = pygame.image.load(path)
         self.base_image = pygame.transform.scale2x(raw_image)
 
         self.velocity = 5

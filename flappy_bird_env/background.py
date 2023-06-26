@@ -7,7 +7,9 @@ from .drawable import Drawable
 
 class Background(Drawable):
     def __init__(self):
-        raw_image = pygame.image.load(os.path.join("images", "background.png"))
+        path = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                            "images", "background.png")
+        raw_image = pygame.image.load(path)
         self.background_image = pygame.transform.scale2x(raw_image)
 
     def draw(self, surface: pygame.Surface) -> None:
