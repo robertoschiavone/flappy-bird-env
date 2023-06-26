@@ -34,13 +34,32 @@
 
 Flappy Bird as a Farama Gymnasium environment.
 
-You can play it by running
+### Installation
+
+```bash
+pip install flappy-bird-env
+```
+
+### Usage
+
+1. Play it by running
 
 ```bash
 python -m flappy_bird_env
 ```
 
 Press `space` to flap the wings.
+
+2. Import it to train your RL model
+
+```python
+import flappy_bird_env  # noqa
+env = gymnasium.make("FlappyBird-v0")
+```
+
+The package relies on ```import``` side-effects to register the environment
+name so, even though the package is never explicitly used, its import is
+necessary to access the environment.
 
 ## Action Space
 
