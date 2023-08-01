@@ -1,4 +1,4 @@
-from .flappy_bird import FlappyBirdEnv
+from .flappy_bird_env import FlappyBirdEnv
 
 from gymnasium.envs.registration import register
 

@@ -1,12 +1,12 @@
+from typing import Any, Dict, List, SupportsFloat, Tuple
+from gymnasium.core import ActType, ObsType, RenderFrame
+
 import functools
 
 import gymnasium as gym
 import numpy as np
 import pygame
 
-from typing import Any, Dict, List, SupportsFloat, Tuple
-
-from gymnasium.core import ActType, ObsType, RenderFrame
 from gymnasium.spaces import Box, Discrete
 
 from .background import Background
